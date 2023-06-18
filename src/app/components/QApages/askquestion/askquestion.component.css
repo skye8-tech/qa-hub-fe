@@ -1,0 +1,83 @@
+.back{
+    background-color: #f7f7b6;
+    color: black;
+}
+ul li a{
+    color: #707070;
+    font-weight: 400;
+}
+.back a{
+    color: #00A888;
+    
+    font-weight: bold;
+}
+hr{
+    color: #00A888;
+    font-weight: bold;
+    width: 80%;
+}
+button{
+    border: 0;
+    background-color: #7DD2C2;
+    height: 40px;
+    width: 10%;
+    border-radius: 4px;
+    color: black;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.title input{
+    border: 1px solid #00A888;
+    width: 70%;
+    height: 40px;
+    margin-right: 10px;
+    color: #777b7a;
+    font-size: 1vw;
+    font-weight: 200;
+    padding-left: 10px;
+    
+}
+.title{
+    border-radius: 5px;
+    width: 80%;
+    padding: 20px;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px 0 rgba(196, 134, 134, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.wait{
+    margin-left: 40px;
+}
+.wait h2{
+    font-weight: 100;
+    font-size: 1.5vw;
+}
+.wait h1{
+   
+    font-size: 3vw;
+}
+.texta{
+   
+   margin-top: 50px;
+    
+}
+.texta textarea{
+    width: 80%;
+    border: 0;
+    background-color: aliceblue;
+    padding: 10px;
+}
+.heading1{
+   padding: 10px;
+    height: 50px;
+    width: 80%;
+    background-color: #7DD2C2;
+}
+.bg button{
+    width: 30%;
+ }
+ .title h4{
+    font-size: 1vw;
+    font-weight: 200;
+ }

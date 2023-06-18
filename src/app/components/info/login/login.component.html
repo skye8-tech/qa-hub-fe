@@ -1,0 +1,31 @@
+<div class="container justify-content-center">
+
+    <div class="row">
+        <div class="col-md-4 imag ">
+            <img src="../../../../assets/guy.png" alt="guy">
+            <h2>This site is all about getting answers. It's not a discussion forum.</h2>
+        </div>
+        <div class="col-md-8 d-flex justify-content-center co">
+
+            <form [formGroup]="UserData">
+                <h1>Login</h1>
+
+                <div>
+                    <label for="email">Email</label>
+                </div>
+                <input type="text" placeholder="enter your email" formControlName="email">
+
+                <div>
+                    <label for="Password">Password</label>
+                </div>
+                <input type="text" placeholder="enter your password" formControlName="password">
+                <hr>
+                <button class="col-md-12 justify-content-center">Login</button>
+                <hr>
+                <p>Don't have an account? <a href="#">Sign up</a></p>
+                <p>view pricing <a href="#">here</a></p>
+            </form>
+
+        </div>
+    </div>
+</div>

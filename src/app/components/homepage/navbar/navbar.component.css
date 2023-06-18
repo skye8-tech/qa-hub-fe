@@ -1,0 +1,75 @@
+
+.container{
+    max-width: 100%;
+    height: 700px;
+    justify-content: center;
+    /*background-image: url("../../../../assets/Rectangle 1.png");*/
+}
+ul{
+    display: flex;
+    float: right;
+    padding-right: 40px;
+   
+   
+}
+ul li{
+    padding-left: 40px;
+    list-style-type: none;
+    
+}
+nav{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+nav a{
+    text-decoration: none;
+    padding-top: 100px;
+    justify-content: space-between;
+    margin-left: 0px;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+.row{
+    display: flex;
+    align-items: center;
+    background-color: rgb(93, 225, 196);
+   margin-top: 50px;
+   align-content: center;
+   margin-left: 100px;
+   margin-right: 100px;
+   border-radius: 50px;
+   
+
+}
+.col img{
+    width: 100%;
+    height: auto;
+    padding-left: 50px;
+   
+}
+.co h1{
+
+    font-size: 5vw;
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.co h3{
+    font-size: 2vw;
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.co h4{
+    font-size: 1.5vw;
+    font-weight: 300;
+    font-family: 'Courier New', Courier, monospace;
+}
+input{
+    width: 100%;
+    border: 2px solid  rgb(178, 205, 236);
+    background-color: transparent;
+    padding-left: 10px;
+    height: 40px;
+    border-radius: 50px;
+    
+}

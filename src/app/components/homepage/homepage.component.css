@@ -1,0 +1,46 @@
+.container{
+    text-align: center;
+   margin-top: 100px;
+}
+.headings h3{
+    color: #00A888;
+    font-size: 1vw;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.row{
+    margin-top: 50px;
+    margin-bottom: 100px;
+   justify-content: center;
+   border: 2px solid #B0079F;
+   border-radius: 4px;
+   
+    
+}
+.row h3{
+    font-size: 1vw;
+}
+.row hr{
+    color: #B0079F;
+}
+.row button{
+    border: 0;
+    color: white;
+    background-color: #B0079F;
+    height: 40px;
+    width: 250px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    margin-top: 25px;
+
+}
+.row h2{
+    font-size: 3vw;
+}
+.row p{
+    margin-top: 20px;
+    font-weight: lighter;
+}
