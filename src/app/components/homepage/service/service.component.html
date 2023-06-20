@@ -1,7 +1,7 @@
 <div class="container">
     <h2>Services</h2>
     <div class="flex">
-        <div class="row" *ngFor="let item of serviceInfo">
+        <div class="col-md-4 mt-4 mb-4" *ngFor="let item of serviceInfo">
             <div class="col-md-8">
                 <img [src]="item.imgUrl" alt="">
                 <p>{{item.desc}}</p>

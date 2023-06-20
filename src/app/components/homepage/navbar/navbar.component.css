@@ -3,7 +3,7 @@
     max-width: 100%;
     height: 700px;
     justify-content: center;
-    /*background-image: url("../../../../assets/Rectangle 1.png");*/
+    background-image: url("../../../../assets/Rectangle 1.png");
 }
 ul{
     display: flex;
@@ -17,13 +17,19 @@ ul li{
     list-style-type: none;
     
 }
+.yes{
+    background-color: red;
+}
 nav{
-    margin-top: 10px;
-    margin-left: 10px;
+    padding-top: 5px;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    display: block;
 }
 nav a{
     text-decoration: none;
-    padding-top: 100px;
+   
     justify-content: space-between;
     margin-left: 0px;
     
@@ -33,11 +39,11 @@ nav a{
 .row{
     display: flex;
     align-items: center;
-    background-color: rgb(93, 225, 196);
-   margin-top: 50px;
+
+   padding-top: 100px;
    align-content: center;
-   margin-left: 100px;
-   margin-right: 100px;
+   padding-left: 100px;
+   padding-right: 100px;
    border-radius: 50px;
    
 
@@ -66,7 +72,7 @@ nav a{
 }
 input{
     width: 100%;
-    border: 2px solid  rgb(178, 205, 236);
+    border: 2px solid  rgb(246, 244, 124);
     background-color: transparent;
     padding-left: 10px;
     height: 40px;

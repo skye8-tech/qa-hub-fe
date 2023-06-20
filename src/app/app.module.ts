@@ -15,6 +15,7 @@ import { LoginComponent } from './components/info/login/login.component';
 import { AllquestionpageComponent } from './components/QApages/allquestionpage/allquestionpage.component';
 import { QuestionpageComponent } from './components/QApages/questionpage/questionpage.component';
 import { AskquestionComponent } from './components/QApages/askquestion/askquestion.component';
+import { SidebarComponent } from './components/QApages/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { AskquestionComponent } from './components/QApages/askquestion/askquesti
     LoginComponent,
     AllquestionpageComponent,
     QuestionpageComponent,
-    AskquestionComponent
+    AskquestionComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
