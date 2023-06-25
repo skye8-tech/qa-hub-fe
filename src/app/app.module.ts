@@ -16,6 +16,7 @@ import { AllquestionpageComponent } from './components/QApages/allquestionpage/a
 import { QuestionpageComponent } from './components/QApages/questionpage/questionpage.component';
 import { AskquestionComponent } from './components/QApages/askquestion/askquestion.component';
 import { SidebarComponent } from './components/QApages/sidebar/sidebar.component';
+import { QApagesComponent } from './components/qapages/qapages.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { SidebarComponent } from './components/QApages/sidebar/sidebar.component
     AllquestionpageComponent,
     QuestionpageComponent,
     AskquestionComponent,
-    SidebarComponent
+    SidebarComponent,
+    QApagesComponent
   ],
   imports: [
     BrowserModule,

@@ -10,17 +10,20 @@ import { AboutpageComponent } from './components/homepage/aboutpage/aboutpage.co
 import { ServiceComponent } from './components/homepage/service/service.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { AskquestionComponent } from './components/QApages/askquestion/askquestion.component';
+import { QApagesComponent } from './components/qapages/qapages.component';
+
 
 const routes: Routes = [
     { path: '', component: ContainerComponent },
-    { path: 'question', component: AllquestionpageComponent},
+    { path: 'question', component: QApagesComponent},
+    
+    { path: 'questions', component: AllquestionpageComponent},
     { path: 'login', component: LoginComponent},
     { path: 'register', component: RegistrationComponent},
-    { path: 'ask', component: AskquestionComponent}
-    /*{ path: 'about', component: AboutpageComponent},
-    { path: 'service', component: ServiceComponent},
-    { path: 'pricing', component: HomepageComponent},*/
-
+    { path: 'ask', component: AskquestionComponent},
+    { path: 'answer', component: QuestionpageComponent},
+   
+    
     
 ];
 
