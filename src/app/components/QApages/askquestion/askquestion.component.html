@@ -5,26 +5,28 @@
             <h2>
                 Fill in the form guide below
             </h2>
+            <form [formGroup]="AskQuestion" (ngSubmit)="onSubmit()">
             <div class="title">
                 <div><label for="title">Title</label></div>
-                <input type="text" placeholder="give a title to your question e.g how to create components in angular?">
+                <input type="text" placeholder="give a title to your question e.g how to create components in angular?" formControlName="title">
                 <div><button>next</button></div>
             </div>
 
 
                 <div class ="texta">
                     <div class = "heading1">Details of your Question</div>
-                    <textarea name="text" id="" cols="30" rows="10" placeholder="the issue is..."></textarea>
+                    <textarea name="text" id="" cols="30" rows="10" placeholder="the issue is..." formControlName="detail"></textarea>
                    <div><button>next</button></div>
                 </div>
 
                 <div class="title">
                     <div><label for="title">Tags</label></div>
                     <h4>Add tags to describe your question</h4>
-                    <input type="text" placeholder="e.g #tech">
+                    <input type="text" placeholder="e.g #tech" formControlName="tags">
                    
                 </div>
-                <div class="bg"><button>Post your Question</button></div>
+                <div class="bg"><button type="submit">Post your Question</button></div>
+            </form>
                 
             
     </div>

@@ -17,6 +17,7 @@ import { QuestionpageComponent } from './components/QApages/questionpage/questio
 import { AskquestionComponent } from './components/QApages/askquestion/askquestion.component';
 import { SidebarComponent } from './components/QApages/sidebar/sidebar.component';
 import { QApagesComponent } from './components/qapages/qapages.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { QApagesComponent } from './components/qapages/qapages.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

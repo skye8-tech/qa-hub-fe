@@ -3,9 +3,9 @@
         <h2>Deals</h2>
         <h3>To get the best experience, Subscribe to one of our plans that best works for you.</h3>
     </div>
-    <div class="flex">
-        <div class="row" *ngFor="let items of dealsSection">
-            <div class="col-md-12 co">
+    <div class="row">
+        <div class="col-md-3 co" *ngFor="let items of dealsSection">
+            
                 <p>{{items.heading1}}</p>
                 <h2>{{items.heading2}}</h2>
                 <hr>
@@ -15,7 +15,7 @@
                 <hr>
                 <h3>{{items.thirdtext}}</h3>
                 <button>{{items.buttext}}</button>
-            </div>
+            
         </div>
     </div>
 </div>

@@ -54,11 +54,23 @@ nav a{
     padding-left: 50px;
    
 }
+@keyframes example{
+    0% {color: black;}
+    25% { color: blueviolet;}
+    50% { color: rgb(226, 189, 43);}
+    75% { color: rgb(43, 49, 226);}
+    100% { color: rgb(43, 226, 122);}
+}
+
+
+
 .co h1{
 
     font-size: 5vw;
     font-weight: 300;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation-name: example;
+    animation-duration: 4s;
 }
 .co h3{
     font-size: 2vw;

@@ -15,13 +15,17 @@ import { QApagesComponent } from './components/qapages/qapages.component';
 
 const routes: Routes = [
     { path: '', component: ContainerComponent },
-    { path: 'question', component: QApagesComponent},
-    
-    { path: 'questions', component: AllquestionpageComponent},
+   { path: 'question', component: QApagesComponent, 
+       children: [ 
+        { path: 'questions', component: AllquestionpageComponent},
+        { path: 'ask', component: AskquestionComponent},
+        { path: 'answer', component: QuestionpageComponent},
+       ]
+   },
     { path: 'login', component: LoginComponent},
     { path: 'register', component: RegistrationComponent},
-    { path: 'ask', component: AskquestionComponent},
-    { path: 'answer', component: QuestionpageComponent},
+    
+    
    
     
     

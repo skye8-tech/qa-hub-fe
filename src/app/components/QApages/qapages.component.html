@@ -9,17 +9,17 @@
 
                 <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                     <li class="nav-item">
-                        <a href="#" class="nav-link align-middle px-0" routerLinkActive="active" routerLink="question">
-                            <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Questions</span>
+                        <a href="#" class="nav-link align-middle px-0" routerLinkActive="active" routerLink="questions">
+                            <fa-icon class="fs-4 bi-house" [icon]="faques"></fa-icon> <span class="ms-1 d-none d-sm-inline">Questions</span>
                         </a>
                         <a href="#" class="nav-link align-middle px-0" routerLinkActive="active" routerLink="answer">
-                            <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Answer</span>
+                            <fa-icon class="fs-4 bi-house" [icon]="farcon"></fa-icon> <span class="ms-1 d-none d-sm-inline">Answer</span>
                         </a>
                     </li>
 
                     <li>
                         <a href="#" class="nav-link px-0 align-middle" routerLinkActive="active" routerLink="ask">
-                            <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Ask a
+                            <fa-icon class="fs-4 bi-house" [icon]="faques"></fa-icon> <span class="ms-1 d-none d-sm-inline">Ask a
                                 Question</span></a>
                     </li>
                     <li>
@@ -63,9 +63,9 @@
             </div>
         </div>
         <div class="col py-3 wait">
-
-            <app-allquestionpage></app-allquestionpage>
+              <router-outlet></router-outlet>
+            <!--app-allquestionpage></app-allquestionpage>
             <app-questionpage></app-questionpage>
-            <app-askquestion></app-askquestion>
+            <app-askquestion></app-askquestion-->
         </div>
     </div>

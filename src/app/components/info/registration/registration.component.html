@@ -7,7 +7,7 @@
     </div>
     <div class="col-md-8 d-flex justify-content-center co">
         
-        <form [formGroup]="UserData">
+        <form [formGroup]="UserData" (ngSubmit)="onSubmit()">
             <h1>Register</h1>
             <div>
                 <label for="Fullname">Name</label> </div>
@@ -26,12 +26,12 @@
                 <input type="text" placeholder="enter your password" formControlName="password">
          
             <div>
-                <input type="text" placeholder="confirm Password" formControlName="confirmpasswod">
+                <input type="text" placeholder="confirm Password" formControlName="confirmpassword">
             </div>
            <hr>
-           <button class="col-md-12 justify-content-center">Submit</button>
+           <button type="submit" class="col-md-12 justify-content-center">Submit</button>
             <hr>
-           <p>Already have an account? <a href="#">Login</a></p>
+           <p>Already have an account? <a routerLink="/login">Login</a></p>
         </form>
 
     </div>

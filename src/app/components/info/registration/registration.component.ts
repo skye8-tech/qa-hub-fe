@@ -18,6 +18,10 @@ export class RegistrationComponent implements OnInit {
     password: new FormControl(null, Validators.required),
     confirmpassword: new FormControl(null, Validators.required),
   })
- console.log(this.UserData.value)
+ 
+}
+
+onSubmit(){
+  console.log(this.UserData.value)
 }
 }

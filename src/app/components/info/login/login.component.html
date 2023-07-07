@@ -7,7 +7,7 @@
         </div>
         <div class="col-md-8 d-flex justify-content-center co">
 
-            <form [formGroup]="UserData">
+            <form [formGroup]="UserData"  (ngSubmit)="onSubmit()">
                 <h1>Login</h1>
 
                 <div>
@@ -20,9 +20,9 @@
                 </div>
                 <input type="text" placeholder="enter your password" formControlName="password">
                 <hr>
-                <button class="col-md-12 justify-content-center">Login</button>
+                <button class="col-md-12 justify-content-center" type="submit">Login</button>
                 <hr>
-                <p>Don't have an account? <a href="#">Sign up</a></p>
+                <p>Don't have an account?<a routerLink="/register">Sign up</a></p>
                 <p>view pricing <a href="#">here</a></p>
             </form>
 

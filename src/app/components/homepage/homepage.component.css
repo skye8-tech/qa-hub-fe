@@ -6,27 +6,27 @@
     color: #00A888;
     font-size: 1vw;
 }
-.flex{
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-}
-.row{
+.co{
+    margin-left: 10px;
     margin-top: 50px;
     margin-bottom: 100px;
    justify-content: center;
    border: 2px solid #B0079F;
    border-radius: 4px;
+ 
    
     
 }
-.row h3{
+.co h3{
     font-size: 1vw;
 }
-.row hr{
+.co hr{
     color: #B0079F;
 }
-.row button{
+.row{
+    justify-content: space-evenly;
+}
+.co button{
     border: 0;
     color: white;
     background-color: #B0079F;
@@ -37,10 +37,10 @@
     margin-top: 25px;
 
 }
-.row h2{
+.co h2{
     font-size: 3vw;
 }
-.row p{
+.co p{
     margin-top: 20px;
     font-weight: lighter;
 }

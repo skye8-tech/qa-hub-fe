@@ -8,6 +8,11 @@ export class QuestionsService {
 
   constructor() { }
 
+
+ savedata(){
+  
+ }
+
   allQuestion: Array<allQuestions> = [
     {
       id: 1,
