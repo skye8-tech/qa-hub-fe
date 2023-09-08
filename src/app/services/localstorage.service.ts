@@ -19,5 +19,5 @@ export class LocalstorageService {
   }
 }
 
-type LocalStorageKey = 'access_token'| 'username'
-const sapl : LocalStorageKey = 'access_token'
+type LocalStorageKey = 'accesstoken'| 'username'
+const sapl : LocalStorageKey = 'accesstoken'

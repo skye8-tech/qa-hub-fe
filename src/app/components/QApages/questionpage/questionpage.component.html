@@ -1,70 +1,39 @@
+<div class="col py-3 wait">
+    <div class="search">
+        <input type="text" placeholder="Find related questions">
+        <button>Search</button>
+    </div>
+    <hr>
 
-        <div class="col py-3 wait">
-            <div class="search">
-                <input type="text" placeholder="Find related questions">
-                <button>Search</button>
-            </div>
-            <hr>
 
-
-            <div class="row style" *ngFor="let user of questiondetails">
-                
-                <div class=" profile">
-                   
-                    <h4>{{user.name}}</h4>
-                </div>
-                <h2>{{user.title}}</h2>
-                <div class="col-md-12 content">
-
-                   
-                    <div class="bg">
-                        <h5>{{user.time}}</h5>
-                        <p>{{user.question}}</p>
-
-                    </div>
-                    <button>cancel</button>
-                </div>
+    <div class="row style">
+       
+        <h2>{{questiondetails.title}}</h2>
+        <div class="col-md-12 content">
+            <div class="bg">
+                <!-- <h5>{{user.time}}</h5> -->
+                <p>{{questiondetails.content}}</p>
 
             </div>
+            <div class=" profile">
+                <h4>{{questiondetails.author!}}</h4>
+            </div>
+        </div>
 
-                <hr>
-                <div>
-                    <h1>Answers</h1>
-                    <div class="row ans">
-                        <div class="col-md-2 profile">
-                            <h4>Thel</h4>
-                        </div>
-                        <div class="col-md-10 content">
-                            <div class="bg">
-                                <h5>Thurs 15 Jun !5:18</h5>
-                                <p>src/app/components/QApages/questionpage/questionpage.component.css (0 bytes)
-                                    CREATE src/app/components/QApages/questionpage/questionpage.component.html (27 bytes)
-                                    CREATE src/app/components/QApages/questionpage/questionpage.component.spec.ts (641 bytes)
-                                    CREATE src/app/components/QApages/questionpage/quest</p>
-                                    <button>comment</button>
-                            </div>
-                            <div class="reply" *ngIf="onClick()">
-                                <input type="text" placeholder="Leave a comment">
-                                <button>Reply</button>
-                            </div>
-                            <div class="comments" *ngIf="">
-                                <p>You are correct</p>
+    </div>
 
-                            </div>
+    <hr>
+    <h1>Answers</h1>
+    <div>
+        <app-answer *ngFor="let answer of answerdetails" [answer]="answer"></app-answer>
+    </div>
+    <hr>
+    <div class="row texta mt-5">
 
+        <div class="col-md-12">
+            <div class="heading1">Write your answer here</div>
+            <textarea name="text" id="" cols="30" rows="10" placeholder="the issue is..."></textarea>
+            <div><button type="submit" (ngSubmit)="onSubmit()">Post your answer</button></div>
+        </div>
 
-                        </div>
-                    </div>
-                </div>
-                 <hr>
-                <div class ="row texta mt-5">
-
-                    <div class ="col-md-12">
-                        <div class = "heading1">Write your answer here</div>
-                        <textarea name="text" id="" cols="30" rows="10" placeholder="the issue is..."></textarea>
-                       <div><button>Post your answer</button></div>
-                    </div>
-                    
-                </div>
-
-    
+    </div>

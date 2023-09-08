@@ -20,6 +20,8 @@ import { QApagesComponent } from './components/qapages/qapages.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { LoginInterceptor } from './interceptors/login.interceptor';
+import { AnswerComponent } from './components/QApages/questionpage/answer/answer.component';
+import { NavigationbarComponent } from './components/homepage/navigationbar/navigationbar.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { LoginInterceptor } from './interceptors/login.interceptor';
     QuestionpageComponent,
     AskquestionComponent,
     SidebarComponent,
-    QApagesComponent
+    QApagesComponent,
+    AnswerComponent,
+    NavigationbarComponent
   ],
   imports: [
     BrowserModule,
@@ -44,8 +48,9 @@ import { LoginInterceptor } from './interceptors/login.interceptor';
     ReactiveFormsModule,
     FontAwesomeModule,
     HttpClientModule
+    
   ],
-  providers:[ {provide: HTTP_INTERCEPTORS, useClass: LoginInterceptor, multi:true},],
+  providers:[ {provide: HTTP_INTERCEPTORS, useClass: LoginInterceptor, multi:true,},],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

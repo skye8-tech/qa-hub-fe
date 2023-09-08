@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { QuestionResponse } from 'src/app/model/askquestion';
 import { QuestionsService } from 'src/app/services/questions.service';
 
 @Component({
@@ -8,22 +9,33 @@ import { QuestionsService } from 'src/app/services/questions.service';
   styleUrls: ['./allquestionpage.component.css']
 })
 export class AllquestionpageComponent implements OnInit {
-  questiondetails:Array<any>=[];
+  questiondetails:Array<QuestionResponse>=[];
   userId:any;
   user:any;
-  constructor(private allquestable: QuestionsService, private route: Router, private isActive:ActivatedRoute,){
+
+  constructor(
+    private _allqustionService: QuestionsService, 
+    private route: Router,
+    private _activatedRoute:ActivatedRoute,
+    ){
 
   }
   ngOnInit(): void {
-    this.questiondetails = this.allquestable.allQuestion;
-
-    
+    this._allqustionService.getAllQuestions().subscribe((res)=>{
+      console.log(res)
+      this.questiondetails = res
+    });
 
   }
-  onClick(){
-    this.route.navigate(['ques'])
-      this.user = this.isActive.snapshot.params['id'];
-      this.user = this.allquestable.allQuestion.find((a) => a.id ==this.userId)
+
+  onSubmit(){
+    this.route.navigate(['questions'])
+
+  }
+  onClick(id: number){
+    this.route.navigate([`/question/questions/${id}`])
+      // this.user = this.isActive.snapshot.params['id'];
+      // this.user = this.allquestable.allQuestion.find((a) => a.id ==this.userId)
 
   }
   

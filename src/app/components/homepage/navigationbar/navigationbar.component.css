@@ -1,0 +1,25 @@
+ul{
+    display: flex;
+    float: right;
+    padding-right: 40px;
+}
+ul li{
+    padding-left: 40px;
+    list-style-type: none;
+    
+}
+
+nav{
+    background-color: aliceblue;
+    padding-top: 10px;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: inline;
+}
+nav a{
+    text-decoration: none;
+   color: blueviolet;
+    justify-content: space-between;
+    margin-left: 10px;
+}

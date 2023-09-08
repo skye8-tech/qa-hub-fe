@@ -19,7 +19,8 @@ export class AuthenticationService {
     
     this.http.post<LoginResponse>(this.url +'/login', request).subscribe(res => {
       loginResponseSubject.next(res);
-      this._localstorage.set('access_token', res.accessToken);
+      this._localstorage.set('accesstoken', res.accessToken);
+      console.log(res.accessToken)
     });
 
    return loginResponseSubject.asObservable();

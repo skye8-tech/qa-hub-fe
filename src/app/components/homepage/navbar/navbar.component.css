@@ -1,41 +1,5 @@
 
-.container{
-    max-width: 100%;
-    height: 700px;
-    justify-content: center;
-    background-image: url("../../../../assets/Rectangle 1.png");
-}
-ul{
-    display: flex;
-    float: right;
-    padding-right: 40px;
-   
-   
-}
-ul li{
-    padding-left: 40px;
-    list-style-type: none;
-    
-}
-.yes{
-    background-color: red;
-}
-nav{
-    padding-top: 5px;
-    width: 100%;
-    height: 40px;
-    position: fixed;
-    display: block;
-}
-nav a{
-    text-decoration: none;
-   
-    justify-content: space-between;
-    margin-left: 0px;
-    
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   
-}
+
 .row{
     display: flex;
     align-items: center;
@@ -45,13 +9,15 @@ nav a{
    padding-left: 100px;
    padding-right: 100px;
    border-radius: 50px;
-   
 
 }
-.col img{
+.yes{
+    background-color: red;
+}
+n img{
     width: 100%;
-    height: auto;
-    padding-left: 50px;
+    height: 100%;
+    /* padding-left: 50px; */
    
 }
 @keyframes example{
@@ -65,8 +31,8 @@ nav a{
 
 
 .co h1{
-
-    font-size: 5vw;
+     color: #00A888;
+    font-size: 7vw;
     font-weight: 300;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     animation-name: example;
@@ -84,7 +50,7 @@ nav a{
 }
 input{
     width: 100%;
-    border: 2px solid  rgb(246, 244, 124);
+    border: 2px solid  #00A888;
     background-color: transparent;
     padding-left: 10px;
     height: 40px;

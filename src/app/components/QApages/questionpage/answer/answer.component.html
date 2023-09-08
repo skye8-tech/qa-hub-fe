@@ -1,0 +1,21 @@
+<div class="row ans">
+    <div class="col-md-2 profile">
+        <h4>{{answer.author!}}</h4>
+    </div>
+    <div class="col-md-10 content">
+        <div class="bg">
+            <h5>Thurs 15 Jun !5:18</h5>
+            <p>{{answer.content}}</p>
+            <button (click)="onClick()">comment</button>
+        </div>
+        <div class="reply" *ngIf="yes">
+            <input type="text" placeholder="Leave a comment">
+            <button (click)="onClick()">Reply</button>
+        </div>
+        <div class="comments" *ngIf="yes">
+            <p>You are correct</p>
+
+        </div>
+
+    </div>
+</div>

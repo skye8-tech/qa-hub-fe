@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { QuestionsService } from 'src/app/services/questions.service';
 
 @Component({
@@ -21,13 +22,14 @@ export class RegistrationComponent implements OnInit {
     })
 
   }
-  constructor(private quesservices: QuestionsService) { }
+  constructor(private quesservices: QuestionsService, private route: Router) { }
 
   onSubmit() {
     this.quesservices.saveData(this.UserData.value).subscribe((res)=>{
       console.log(res)
     
     })
+    this.route.navigate(['question'])
     
   }
 }

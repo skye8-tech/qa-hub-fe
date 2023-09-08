@@ -1,32 +1,24 @@
-
-        <div class="col py-3">
-            <div class="search">
-                <input type="text" placeholder="Find related questions">
-                <button>Search</button>
-            </div>
+<div class="col py-3">
+    <div class="search">
+        <input type="text" placeholder="Find related questions">
+        <button>Search</button>
+    </div>
+    <hr>
+    <div class="row" *ngFor="let user of questiondetails">
+        <div class="col-md-1 profile">
+            <div class="author">{{user.author}}</div>
+        </div>
+        <div class="col-md-10 content">
+            <h2>{{user.title}}</h2>
             <hr>
-            
-          
-            <div class="row" *ngFor="let user of questiondetails"  >
-                <div class="col-md-2 profile">
-                    <h4>{{user.name}}</h4>
-                </div>
-                <div class="col-md-10 content">
-                    <h2>{{user.title}}</h2>
-                    <hr>
-                    <div class="bg">
-                        <h5>{{user.time}}</h5>
-                        <p>{{user.question}}</p>
-                     
-                    </div>
-                    <div> 
-                     <button>Answer</button>
-                     <button (click)="onClick()">View answers</button>
-                    </div>
-                  
-                </div>
-             
-         </div>
-  
-         <hr> 
-       
+            <div class="bg">
+                <!-- <h5>{{Date()}}</h5> -->
+                <p>{{user.content}}</p>
+            </div>
+            <div>
+                <!-- <button type="submit" (ngSubmit)="onSubmit()">Answer</button> -->
+                <button (click)="onClick(user.id)">View answers</button>
+            </div>
+        </div>
+    </div>
+ <hr>

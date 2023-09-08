@@ -8,24 +8,20 @@
 form{
     
     align-self: center;
-    padding: 50px;
-    
-    
-   
+    padding: 50px; 
 }
 .co{
    
     align-content: center;
     display: flex;
     max-width: fit-content;
-    box-shadow: 0px 4px 12px  rgba(0, 0, 0, 0.08);
-    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
-    margin-right: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-right: 0px;
     
 }
 form label{
     font-size: 1em;
-    font-weight: 500;
+    font-weight: bold;
 }
 form input{
     border: 1px solid #8e8c8c;
@@ -54,7 +50,7 @@ hr{
     font-weight: bold;
 }
 p{
-    font-size: 0.7em;
+    font-size: 1em;
 
 }
 p a{
@@ -70,8 +66,8 @@ h1{
 .imag{
     background-color: rgb(253, 253, 155);
     border-radius: 4px;
-    margin-left: 100px;
-    padding: 100px;
+    margin-left: 0px;
+    padding: 10px;
     text-align: center;
 
 }
@@ -87,4 +83,13 @@ img{
 }
 input.ng-invalid.ng-touched{
     border:red 1px solid;
+}
+@media only screen and (max-width: 1090px){
+    .img{
+        width: 1000px;
+        margin-bottom: 10px;
+    }
+    img{
+        width: 50%;
+    }
 }

@@ -2,6 +2,11 @@
     background-color: #f7f7b6;
     color: black;
     position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
     
     
 }
@@ -9,9 +14,12 @@ ul li a{
     color: #707070;
     font-weight: 400;
 }
-.wait{
+.col-10{
+    padding-left: 50px;
+}
+/* .wait{
     width: calc(100% - 300px) !important;
-    left: 300p !important;
+    left: 300px !important;
     position: relative;
     margin-left: auto;
-}
+} */

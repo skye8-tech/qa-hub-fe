@@ -17,8 +17,9 @@ const routes: Routes = [
     { path: '', component: ContainerComponent },
    { path: 'question', component: QApagesComponent, 
        children: [ 
-        { path: 'questions', component: AllquestionpageComponent},
-        { path: 'ask', component: AskquestionComponent},
+         { path: 'questions', component: AllquestionpageComponent},        
+         { path: 'questions/:id', component: QuestionpageComponent},
+         { path: 'ask', component: AskquestionComponent},
         { path: 'answer', component: QuestionpageComponent},
        ]
    },

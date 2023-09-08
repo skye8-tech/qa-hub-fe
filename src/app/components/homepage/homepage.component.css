@@ -11,7 +11,7 @@
     margin-top: 50px;
     margin-bottom: 100px;
    justify-content: center;
-   border: 2px solid #B0079F;
+   border: 2px solid blueviolet;
    border-radius: 4px;
  
    
@@ -21,7 +21,7 @@
     font-size: 1vw;
 }
 .co hr{
-    color: #B0079F;
+    color: blueviolet;
 }
 .row{
     justify-content: space-evenly;
@@ -29,7 +29,7 @@
 .co button{
     border: 0;
     color: white;
-    background-color: #B0079F;
+    background-color: blueviolet;
     height: 40px;
     width: 250px;
     border-radius: 4px;
