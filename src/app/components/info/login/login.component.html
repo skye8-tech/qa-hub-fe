@@ -5,22 +5,22 @@
             <img src="../../../../assets/guy.png" alt="guy">
             <h2>This site is all about getting answers. It's not a discussion forum.</h2>
         </div>
-        <div class="col-md-8 d-flex justify-content-center co">
+        <div class="col-md-8 co">
 
-            <form [formGroup]="UserData"  (ngSubmit)="onSubmit()">
+            <form [formGroup]="form" (ngSubmit)="onSubmit()">
                 <h1>Login</h1>
 
                 <div>
-                    <label for="email">Email</label>
+                    <label for="email">Username</label>
                 </div>
-                <input type="text" placeholder="enter your email" formControlName="email">
+                <input type="text" placeholder="enter your username" formControlName="username">
 
                 <div>
                     <label for="Password">Password</label>
                 </div>
                 <input type="text" placeholder="enter your password" formControlName="password">
                 <hr>
-                <button class="col-md-12 justify-content-center" type="submit">Login</button>
+                <button class="col-md-12" type="submit">Login</button>
                 <hr>
                 <p>Don't have an account?<a routerLink="/register">Sign up</a></p>
                 <p>view pricing <a href="#">here</a></p>

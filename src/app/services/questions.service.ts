@@ -1,18 +1,23 @@
 import { Time } from '@angular/common';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment.development';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class QuestionsService {
-
-  constructor() { }
-
-
- savedata(){
+  url = environment.apiUrl + "/api/auth"
+  constructor(private http: HttpClient) { }
   
- }
 
+  saveData=(data: any) =>{
+    //console.log(data)
+    return this.http.post(this.url +"/register", data)
+  }
+  
+
+ 
   allQuestion: Array<allQuestions> = [
     {
       id: 1,
